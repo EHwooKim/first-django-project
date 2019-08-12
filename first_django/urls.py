@@ -24,4 +24,12 @@ urlpatterns = [
     # 1. url 설정
     # path(url, 해당하는 views의 함수)
     path('', views.index),
+    # /hello 로 들어오면 인사하기
+    # variable routing
+    # url에 특정 값을 변수처럼 활용!
+    path('hello/<str:name>/', views.hello),
+    # /lotto 로 들어오면 번호 추첨하기
+    path('lotto/', views.lotto),
+    
+    
 ]
