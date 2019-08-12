@@ -30,6 +30,7 @@ urlpatterns = [
     path('hello/<str:name>/', views.hello),
     # /lotto 로 들어오면 번호 추첨하기
     path('lotto/', views.lotto),
+    path('dinner/', views.dinner),
     
     
 ]
