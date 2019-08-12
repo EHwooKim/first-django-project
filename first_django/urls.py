@@ -31,6 +31,6 @@ urlpatterns = [
     # /lotto 로 들어오면 번호 추첨하기
     path('lotto/', views.lotto),
     path('dinner/', views.dinner),
-    
-    
+    path('cube/<int:num>/',views.cube),
+    path('about/<str:name>/<int:age>/', views.about),
 ]
