@@ -2,12 +2,20 @@
 
 {% block css %}
 <style>
-h1 {
-  color: blueviolet;
-}
+  div {
+    margin: 30px;
+  }
 </style>
 {% endblock %}
 
 {% block body %}
-  <h1> 서비스 목록! </h1>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Service List
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/services/artii">artii</a>
+      <a class="dropdown-item" href="/services/push">push</a>
+    </div>
+  </div>
 {% endblock %}

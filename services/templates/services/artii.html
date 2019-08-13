@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container">
+  <div class="jumbotron" style="position: relative">
+    <h1 class="display-4">Artii Page</h1>
+    <p class="lead">아스키 아트로 만들고 싶은 단어와 폰트를 선택하세요</p>
+    <hr class="my-4">
+    <form action="/services/artii_result">
+      <div class="form-group">
+        <label for="Text">Text</label>
+        <input type="text" class="form-control" id="Text" placeholder="text" name="string">
+      </div>
+      <div class="form-group">
+        <label for="font">Font</label>
+        <select class="form-control" id="font" name="font" style="cursor: pointer">
+          <option value="acrobatic">acrobatic</option>
+          <option value="rounded">rounded</option>
+          <option value="alligator">alligator</option>
+          <option value="short">short</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-dark mb-2" style="position: absolute; bottom: 10px; right: 32px;">Submit</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

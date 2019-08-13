@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="container">
+  <div class="jumbotron" style="position: relative">
+    <h1 class="display-4">Artii Result</h1>
+    <p class="lead">{{ string }} x {{ font }}</p>
+    <hr class="my-4">
+    <div>
+      <pre>{{ result }}</pre>
+    </div>
+  </div>
+</div>
+{% endblock%}
