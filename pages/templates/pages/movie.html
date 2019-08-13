@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>영화추천사이트</title>
-  <link rel="stylesheet" href="{% static 'stylesheets/movie.css' %}">
+  <link rel="stylesheet" href="{% static 'pages/stylesheets/movie.css' %}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Gothic|Nanum+Pen+Script|Noto+Sans+KR&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link rel="icon" type="image/png" sizes="96x96" href="{% static 'images/movie/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="{% static 'pages/images/movie/favicon-96x96.png">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
       <div class="row">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
           <div class="card">
-            <img src="{% static 'images/movie/20184621.jpg' %}" class="card-img-top" alt="엑시트" data-toggle="modal" data-target="#modal01">
+            <img src="{% static 'pages/images/movie/20184621.jpg' %}" class="card-img-top" alt="엑시트" data-toggle="modal" data-target="#modal01">
             <div class="card-body">
               <h4 class="card-title">엑시트</h4>
               <span class="badge badge-info" onMouseOver="this.innerHTML='평점'" onMouseOut="this.innerHTML='9.07'" >9.07</span>
@@ -59,7 +59,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
           <div class="card">
-            <img src="{% static 'images/movie/20180442.jpg' %}" class="card-img-top" alt="사자" data-toggle="modal" data-target="#modal02">
+            <img src="{% static 'pages/images/movie/20180442.jpg' %}" class="card-img-top" alt="사자" data-toggle="modal" data-target="#modal02">
             <div class="card-body">
               <h4 class="card-title">사자</h4>
               <span class="badge badge-secondary" onMouseOver="this.innerHTML='평점'" onMouseOut="this.innerHTML='9.07'" >8.32</span>
@@ -71,7 +71,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
           <div class="card">
-            <img src="{% static 'images/movie/20183844.jpg' %}" class="card-img-top" alt="마이펫의 이중생활2" data-toggle="modal"
+            <img src="{% static 'pages/images/movie/20183844.jpg' %}" class="card-img-top" alt="마이펫의 이중생활2" data-toggle="modal"
               data-target="#modal03">
             <div class="card-body">
               <h4 class="card-title ">마이펫의 이중생활2</h4>
@@ -84,7 +84,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
           <div class="card">
-            <img src="{% static 'images/movie/20175771.jpg' %}" class="card-img-top" alt="라이온 킹" data-toggle="modal"
+            <img src="{% static 'pages/images/movie/20175771.jpg' %}" class="card-img-top" alt="라이온 킹" data-toggle="modal"
               data-target="#modal04">
             <div class="card-body">
               <h4 class="card-title">라이온 킹</h4>
@@ -97,7 +97,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
           <div class="card">
-            <img src="{% static 'images/movie/20183867.jpg' %}" class="card-img-top" alt="알라딘" data-toggle="modal" data-target="#modal05">
+            <img src="{% static 'pages/images/movie/20183867.jpg' %}" class="card-img-top" alt="알라딘" data-toggle="modal" data-target="#modal05">
             <div class="card-body">
               <h4 class="card-title">알라딘</h4>
               <span class="badge badge-info" onMouseOver="this.innerHTML='평점'" onMouseOut="this.innerHTML='9.07'" >9.45</span>
@@ -109,7 +109,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
           <div class="card">
-            <img src="{% static 'images/movie/20198323.jpg' %}" class="card-img-top" alt="레드슈즈" data-toggle="modal" data-target="#modal06">
+            <img src="{% static 'pages/images/movie/20198323.jpg' %}" class="card-img-top" alt="레드슈즈" data-toggle="modal" data-target="#modal06">
             <div class="card-body">
               <h4 class="card-title">레드슈즈</h4>
               <span class="badge badge-info" onMouseOver="this.innerHTML='평점'" onMouseOut="this.innerHTML='9.07'" >9.24</span>
@@ -145,13 +145,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'images/movie/20184621-01.jpg' %}" class="d-block w-100" alt="엑시트01">
+                <img src="{% static 'pages/images/movie/20184621-01.jpg' %}" class="d-block w-100" alt="엑시트01">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20184621-02.jpg' %}" class="d-block w-100" alt="엑시트02">
+                <img src="{% static 'pages/images/movie/20184621-02.jpg' %}" class="d-block w-100" alt="엑시트02">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20184621-03.jpg' %}" class="d-block w-100" alt="엑시트03">
+                <img src="{% static 'pages/images/movie/20184621-03.jpg' %}" class="d-block w-100" alt="엑시트03">
               </div>
             </div>
             <a class="carousel-control-prev" href="#modal01Indicators" role="button" data-slide="prev">
@@ -201,13 +201,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'images/movie/20180442-01.jpg' %}" class="d-block w-100" alt="사자01">
+                <img src="{% static 'pages/images/movie/20180442-01.jpg' %}" class="d-block w-100" alt="사자01">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20180442-02.jpg' %}" class="d-block w-100" alt="사자02">
+                <img src="{% static 'pages/images/movie/20180442-02.jpg' %}" class="d-block w-100" alt="사자02">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20180442-03.jpg' %}" class="d-block w-100" alt="사자03">
+                <img src="{% static 'pages/images/movie/20180442-03.jpg' %}" class="d-block w-100" alt="사자03">
               </div>
             </div>
             <a class="carousel-control-prev" href="#modal02Indicators" role="button" data-slide="prev">
@@ -257,13 +257,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'images/movie/20183844-01.jpg' %}" class="d-block w-100" alt="마이펫201">
+                <img src="{% static 'pages/images/movie/20183844-01.jpg' %}" class="d-block w-100" alt="마이펫201">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20183844-02.jpg' %}" class="d-block w-100" alt="마이펫202">
+                <img src="{% static 'pages/images/movie/20183844-02.jpg' %}" class="d-block w-100" alt="마이펫202">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20183844-03.jpg' %}" class="d-block w-100" alt="마이펫203">
+                <img src="{% static 'pages/images/movie/20183844-03.jpg' %}" class="d-block w-100" alt="마이펫203">
               </div>
             </div>
             <a class="carousel-control-prev" href="#modal03Indicators" role="button" data-slide="prev">
@@ -312,13 +312,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'images/movie/20175771-01.jpg' %}" class="d-block w-100" alt="라이온킹01">
+                <img src="{% static 'pages/images/movie/20175771-01.jpg' %}" class="d-block w-100" alt="라이온킹01">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20175771-02.jpg' %}" class="d-block w-100" alt="라이온킹02">
+                <img src="{% static 'pages/images/movie/20175771-02.jpg' %}" class="d-block w-100" alt="라이온킹02">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20175771-03.jpg' %}" class="d-block w-100" alt="라이온킹03">
+                <img src="{% static 'pages/images/movie/20175771-03.jpg' %}" class="d-block w-100" alt="라이온킹03">
               </div>
             </div>
             <a class="carousel-control-prev" href="#modal04Indicators" role="button" data-slide="prev">
@@ -368,13 +368,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'images/movie/20183867-01.jpg' %}" class="d-block w-100" alt="알라딘01">
+                <img src="{% static 'pages/images/movie/20183867-01.jpg' %}" class="d-block w-100" alt="알라딘01">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20183867-02.jpg' %}" class="d-block w-100" alt="알라딘02">
+                <img src="{% static 'pages/images/movie/20183867-02.jpg' %}" class="d-block w-100" alt="알라딘02">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20183867-03.jpg' %}" class="d-block w-100" alt="알라딘03">
+                <img src="{% static 'pages/images/movie/20183867-03.jpg' %}" class="d-block w-100" alt="알라딘03">
               </div>
             </div>
             <a class="carousel-control-prev" href="#modal05Indicators" role="button" data-slide="prev">
@@ -422,13 +422,13 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'images/movie/20198323-01.jpg' %}" class="d-block w-100" alt="엑시트01">
+                <img src="{% static 'pages/images/movie/20198323-01.jpg' %}" class="d-block w-100" alt="엑시트01">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20198323-02.jpg' %}" class="d-block w-100" alt="엑시트02">
+                <img src="{% static 'pages/images/movie/20198323-02.jpg' %}" class="d-block w-100" alt="엑시트02">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'images/movie/20198323-03.jpg' %}" class="d-block w-100" alt="엑시트03">
+                <img src="{% static 'pages/images/movie/20198323-03.jpg' %}" class="d-block w-100" alt="엑시트03">
               </div>
             </div>
             <a class="carousel-control-prev" href="#modal06Indicators" role="button" data-slide="prev">

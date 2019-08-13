@@ -22,7 +22,7 @@
           - django에서 POST 요청으로 form을 보내는 경우 보안상의 이유로 항상 csrf_token을 넣어줘야 함.
    -->
   <div class="signup">
-    <form action="/signup_result/" method="POST">
+    <form action="/pages/signup_result/" method="POST">
       {% csrf_token %}
       <div class="flex-end">
         <label for="username">아이디: </label>
@@ -41,7 +41,7 @@
       </div>
     </form>
   </div>
-  <img src="{% static 'images/man.jpg' %}" alt="너굴맨">  
+  <img src="{% static 'pages/images/man.jpg' %}" alt="너굴맨">  
   
     
     

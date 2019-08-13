@@ -64,10 +64,10 @@ def isitgwangbok(request):
         'today': today,
         'answer': answer
     }
-    return render(request,'isitgwangbok.html', context)
+    return render(request,'pages/isitgwangbok.html', context)
 
 def ping(request):
-    return render(request,'ping.html')
+    return render(request,'pages/ping.html')
 
 def pong(request):
     # 사용자가 넘겨주는 값 받아오기 (META가 어디에 담겨서 온다그랬지? request!! GET도 마찬가지.)
@@ -80,7 +80,7 @@ def pong(request):
     return render(request, 'pages/pong.html', context)
 
 def signup(request):
-    return render(request,'signup.html')
+    return render(request,'pages/signup.html')
 
 
 def signup_result(request):

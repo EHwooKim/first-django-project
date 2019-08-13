@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # 이게 결국 first-django-project 폴더를 가르키는 거야.
 
 
 # Quick-start development settings - unsuitable for production
@@ -56,8 +56,16 @@ ROOT_URLCONF = 'first_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        # 만약 app 폴더의 templates 폴더가 아닌 곳에서 템플릿 파일을 관리하려면
+        # 아래의 DIRS에 추가한다.! 
+        'DIRS': [
+            # BASAE_DIR은 16번째 줄에 정의된 변수 - 현재 프로젝트 폴더 위치를 뜻한다.
+            # 즉, first-django-project 폴더임.
+            # os.path.join : 각각을 /로 묶어서 경로 설정을 해준다.
+            # 따라서 아랫줄은 first-django-proeject/first_django/templates를 의미한다
+            os.path.join(BASE_DIR,'first_django', 'templates'),
+        ],
+        'APP_DIRS': True, # INSTALLED_APPS에 있는 app의 templates 폴더들을 템플릿으로 관리!
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
