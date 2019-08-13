@@ -1,0 +1,15 @@
+
+.signup {
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+form > div{
+
+  margin: 10px;
+}

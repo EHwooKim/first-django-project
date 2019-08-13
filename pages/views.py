@@ -54,3 +54,50 @@ def cube(request, num):
 def about(request, name, age):
     context = {'name': name, 'age': age}
     return render(request, 'about.html', context)
+
+def isitgwangbok(request):
+    today = datetime.datetime.now()
+    if today.month == 8 and today.day == 15:
+        answer = '예'
+    else: answer = '아니요'
+    context = {
+        'today': today,
+        'answer': answer
+    }
+    return render(request,'isitgwangbok.html', context)
+
+def ping(request):
+    return render(request,'ping.html')
+
+def pong(request):
+    # 사용자가 넘겨주는 값 받아오기 (META가 어디에 담겨서 온다그랬지? request!! GET도 마찬가지.)
+    print(request.GET) # 찍어보니 딕셔너리 안에 리스트로 값이 넘어오지? QuertDict
+    # QueryDict {'data':'안녕하세요'}
+    data = request.GET.get('data')
+    context = {
+        'data': data
+    }
+    return render(request, 'pong.html', context)
+
+def signup(request):
+    return render(request,'signup.html')
+
+
+def signup_result(request):
+    username = request.POST.get('username')
+    password = request.POST.get('password')
+    password_confirmation = request.POST.get('password_confirmation')
+
+    if password == password_confirmation:
+        result = True
+    else:
+        result = False
+
+    context = {
+        'username': username,
+        'result': result
+    }
+    return render(request, 'signup_result.html', context)
+
+def movie(request):
+    return render(request, 'movie.html')

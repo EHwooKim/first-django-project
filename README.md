@@ -1,5 +1,47 @@
 # Django
 
+## 00. 가상 환경 설정, 프로젝트 생성, django 사용 순서 정리
+
+1. 폴더 만들고 
+
+   > 새폴더, 또는 mkdir `__폴더명__`
+
+2. 가상환경 만들고
+
+   > python -m venv venv
+
+3.  .gitignore에 venv/ 추가
+
+4. 가상환경 실행 후  <-- 이 폴더에서 뭐 하기 전에 항상 가상환경 실행부터 시키자!
+
+   > source venv/Scripts/activate
+
+5. 원하는 django 버전 설치
+
+   > pip install django
+
+6. 프로젝트 생성
+
+   > django-admin startproject `__폴더명__` `.`
+   >
+   > 마지막에 점 꼭 찍자. 현재 이 폴더에 풀어주세요라는 의미 
+
+7.  app 생성 및 등록(settings)
+
+8. url 설정
+
+9. views.py 설정
+
+10. templates 설정
+
+11. 서버 실행
+
+* 중간중간 pip list와 ls로 현재 상태 확인하기.
+
+
+
+
+
 ## 01. 시작하기
 
 ```bash
@@ -189,7 +231,10 @@ $ python manage.py runserver
 
 
 
+## 03. 
 
+정적파일 관리(static file)
 
+- img(.png), css, js
 
-
+- 

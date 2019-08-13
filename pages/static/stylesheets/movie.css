@@ -1,0 +1,69 @@
+body {
+  height: 2000px;
+}
+nav {
+  font-family: 'Jua', sans-serif;
+}
+header {
+  margin-top: 56px;
+  height: 350px;
+  background-image: url("/static/images/movie/header_background.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 37%
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  padding: 0 3rem;
+  background: gray;
+}
+.container > h3 {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+}
+.container h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.card-body > p {
+  font-family: 'Noto Sans KR', sans-serif;
+} 
+.card > img {
+  cursor: pointer;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.modal-content {
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+header > h2 {
+  line-height: 350px;
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
+footer > div {
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+footer > div > p {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.5rem;
+}
+footer > div > a {
+  color: black;
+}
