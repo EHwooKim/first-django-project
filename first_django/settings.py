@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'services',
     'pages', #  app 만들자마자  등록!
     'django.contrib.admin',
     'django.contrib.auth',
