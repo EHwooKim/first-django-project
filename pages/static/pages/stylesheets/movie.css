@@ -7,7 +7,7 @@ nav {
 header {
   margin-top: 56px;
   height: 350px;
-  background-image: url("/static/images/movie/header_background.png"); 
+  background-image: url("/static/pages/images/movie/header_background.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
