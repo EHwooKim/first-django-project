@@ -231,10 +231,3 @@ $ python manage.py runserver
 
 
 
-## 03. 
-
-정적파일 관리(static file)
-
-- img(.png), css, js
-
-- 
