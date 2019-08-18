@@ -54,18 +54,43 @@
         <label for="name">이름</label>
         <input type="text" class="form-control" id="name" placeholder="your name" name="name">
       </div>
-      <div class="form-group">
-        <label for="year">년도</label>
-        <select class="form-control" id="year" name="year">
-          <option>1990</option>
-          <option>1991</option>
-          <option>1992</option>
-          <option>1993</option>
-          <option>1994</option>
-          <option>1995</option>
-          <option>1996</option>
-        </select>
+      <div class="row">
+        <div class="col-4">
+            <div class="form-group">
+                <label for="year">생년</label>
+                <select class="form-control" id="year" name="year">
+                  <option>1990</option>
+                  <option>1991</option>
+                  <option>1992</option>
+                  <option>1993</option>
+                  <option>1994</option>
+                  <option>1995</option>
+                  <option>1996</option>
+                </select>
+              </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label for="month">월</label>
+                <select class="form-control" id="month" name="month">
+                    <option>1월 ~ 4월</option>
+                    <option>5월 ~ 8월</option>
+                    <option>9월 ~ 12월</option>
+                </select>
+              </div>
+        </div>
+        <div class="col-4">
+            <div class="form-group">
+                <label for="day">일</label>
+                <select class="form-control" id="day" name="day">
+                  <option>1일 ~ 10일</option>
+                  <option>11일 ~ 20일</option>
+                  <option>21일 ~</option>
+                </select>
+              </div>
+        </div>
       </div>
+
       <div class="form-group">
         <label for="language">언어</label>
         <select multiple class="form-control" id="language" name="language">

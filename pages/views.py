@@ -109,6 +109,8 @@ def output(request):
     context = {
         'name': request.GET.get('name'),
         'year': request.GET.get('year'),
+        'month': request.GET.get('month'),
+        'day': request.GET.get('day'),
         'language': request.GET.get('language'),
         'anything': request.GET.get('anything'),
     }

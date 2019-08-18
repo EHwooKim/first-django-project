@@ -48,12 +48,16 @@
       </form>
     </div>
   </nav>
-  {{ name }}
-  {{ year }}
-  {{ language }}
-  {{ anything }}
-
-
+  <div class="container">
+    <h1>{{ name }}</h1>
+    <hr>
+    <h2>{{ year }}. {{ month }}. {{ day }}</h2>
+    <hr>
+    <h3>{{ language }}</h3>
+    <hr>
+    <p>{{ anything|truncatechars:150 }}</p>
+    <hr>
+  </div>
 
 
 
