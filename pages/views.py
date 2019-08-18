@@ -102,5 +102,17 @@ def signup_result(request):
 def nav(request):
     return render(request, 'pages/nav.html')
 
+def input(request):
+    return render(request, 'pages/input.html')
+
+def output(request):
+    context = {
+        'name': request.GET.get('name'),
+        'year': request.GET.get('year'),
+        'language': request.GET.get('language'),
+        'anything': request.GET.get('anything'),
+    }
+    return render(request, 'pages/output.html', context)
+
 def movie(request):
     return render(request, 'pages/movie.html')
