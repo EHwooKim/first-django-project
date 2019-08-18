@@ -99,5 +99,8 @@ def signup_result(request):
     }
     return render(request, 'pages/signup_result.html', context)
 
+def nav(request):
+    return render(request, 'pages/nav.html')
+
 def movie(request):
     return render(request, 'pages/movie.html')

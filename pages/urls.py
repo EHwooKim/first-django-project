@@ -13,5 +13,6 @@ urlpatterns = [
     path('pong/', views.pong),
     path('signup/', views.signup),
     path('signup_result/', views.signup_result),
+    path('nav/',views.nav),
     path('movie/',views.movie),
 ]

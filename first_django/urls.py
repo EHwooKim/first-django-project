@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # 각 앱별로 따로 urls.py를 정의하여 관리함.
     path('pages/', include('pages.urls')),
-    path('services/', include('services.urls'))
+    path('services/', include('services.urls')),
 ]
 
