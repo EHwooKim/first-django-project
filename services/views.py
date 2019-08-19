@@ -26,10 +26,9 @@ def artii_result(request):
 def push(request):
     return render(request, 'services/push.html')
     
-
 def pull(request):
     text = request.GET.get('text')
     context = {
-        'text':text
+        'text': text
     }
     return render(request, 'services/pull.html', context)

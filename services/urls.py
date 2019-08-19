@@ -1,4 +1,5 @@
 from django.urls import path
+# 현재 app(directory)의 views.py 를 가져옴
 from . import views
 
 urlpatterns = [
