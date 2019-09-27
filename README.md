@@ -231,3 +231,15 @@ $ python manage.py runserver
 
 
 
+
+
+## 작은 규칙들
+
+* 클래스는 CamelCase
+* 함수,변수는 snake_case
+* App 은 복수형
+* class는 단수형
+* 가능한 재사용 가능하게 만들자!
+
+
+
