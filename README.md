@@ -77,6 +77,8 @@ $ pip install django
      * `Lib` : 가상환경에 설치되는 라이브러리 모음. 
      * `Scripts` : 가상환경 실행과 관련된 파일
 
+   
+
 2. 가상환경 실행
 
    ```bash
@@ -242,4 +244,21 @@ $ python manage.py runserver
 * 가능한 재사용 가능하게 만들자!
 
 
+
+
+
+## bashrc 단축키
+
+```bash
+$ vi ~/.bashrc 들어가서 i눌러서 편집 모드
+"alias venv=""source ~/python-virtualenv/3.7.4/Scripts/activate""
+alias activate ""source venv/Scripts/activate""
+venv"
+붙여놓고 esc :wq 해서 저장 및 종료
+$ source ~/.bashrc 로 실행!
+```
+
+```bash
+shell_plus 는 pip install django_extensions
+```
 
